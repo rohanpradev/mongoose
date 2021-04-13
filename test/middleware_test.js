@@ -18,7 +18,6 @@ describe('MiddleWare', () => {
       .remove()
       .then(() => BlogPost.count())
       .then((blogCnt) => {
-        console.log(blogCnt);
         assert(blogCnt === 0);
         done();
       });
